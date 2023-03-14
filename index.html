@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html onmousemove="showCoords(event)">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Salvador Palma</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <div class="subtitle-container">
+    <body >
+        <div class="banner" >
             <div>
-                <a href="index.html" class="sub-titles">Games</a>
-                <p class="sub-descriptions">Started building games in Unity by the age of 13</p>
+                <p>Hi, my name is</p>
+                <p class="name">Salvador Palma</p>
+                <p id="cnsl"></p>
             </div>
-            
-            <img src="Console-Toon-gradient.png" class="subtitle-image" >
+            <div>
+                <div class="character">
+                    <span class="character-container">
+                        <img class="model-body" src="Untitled-1.gif">
+                        <div class="eyes-container">
+                            <img class="model-eyes" id="eyes" src="eyes.png">
+                        </div>
+                        
+                        
+                        
+                    </span>
+                </div>
+                
+            </div>
         </div>
-        
+        <script src="characterMove.js"></script>
     </body>
 </html>
