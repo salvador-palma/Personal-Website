@@ -8,10 +8,15 @@
 }
 body {
     background: #142F43;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     
 }
 .banner{
     margin-top: 15vh;
+    margin-bottom: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -25,8 +30,16 @@ body {
     font-family: Nexa-H;
     color: #32D874;
     font-size: 4vh;
+    transition: text-shadow 0.2s;
 }
+.name:hover{
+    text-shadow:
+    0 0 10px #32D874;
+}
+
+
 .character-container{
+    
     position: relative;
     height: 50vw;
     width: 50vw;
@@ -38,6 +51,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: scale 0.4s;
+}
+
+.character-container:hover{
+    scale: 1.1;
 }
 .model-body{
     position: absolute;
@@ -46,13 +64,14 @@ body {
     max-width: 150%;
     text-align: center;
     z-index: 1;
+   
 }
 .model-eyes{
     position: absolute;
     height: auto;
     width: 30%;
     z-index: 2;
-    
+    transition: left 0.1s, top 0.1s;
 }
 
 .eyes-container{
@@ -60,10 +79,77 @@ body {
     height: 100%;
     width: 100%;
     max-width: 100%;
-    left: 41%;
-    top: 20.5%;
+    left: 66%;
+    top: 45.5%;
     z-index: 1;
+}
+
+.content-container{
+    text-align: center;
+    align-self: center;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 5vw;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-holder{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    right: 26%;
+    bottom: 25%;
+    transition: bottom ease-in-out;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+}
+
+@keyframes floating{
+    from{
+        bottom: 27%;
+    }
+    to{
+        bottom: 23%;
+    }
+}
+
+.content-container > * {
+    margin: 10vh;
+}
+.contact-container{
+    background-color: rgba(255,255,255,0.7);
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    
+
+}
+
+.contact-container-solid{
+    width: 50%;
+    height: 100%;
+    border-radius: 5vw;
+    background-color: rgba(255,255,255,0.8);
+
 }
 
 
 
+
+.footer{
+    align-self: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.footer > p {
+    color: white;
+    text-decoration:underline;
+}
