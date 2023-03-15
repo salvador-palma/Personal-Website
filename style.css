@@ -121,26 +121,62 @@ body {
 }
 
 .content-container > * {
-    margin: 10vh;
+    margin: 6vw;
 }
 .contact-container{
-    background-color: rgba(255,255,255,0.7);
-    height: 60vh;
+    height: auto;
     width: 90%;
     display: flex;
-    
-
 }
 
 .contact-container-solid{
-    width: 50%;
+    width: auto;
     height: 100%;
     border-radius: 5vw;
+    padding-bottom: 4vw;
     background-color: rgba(255,255,255,0.8);
 
 }
+.subtitle{
+    font-family: Nexa-EL;
+    font-weight: bolder;
+    color: #142F43;
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+.contact-form{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 0;
+    background-color: #32D874;
+ 
+}
+.contact-form > div {
+    display: flex;
+    justify-content: right;
+}
+.contact-form > div > * {
+    margin: 0.3vw 1vw 0.3vw 1vw;
+    
+}
+.contact-form > div > input{
+    height: 3vw;
+    width: 65%;
+    min-width: 65%;
+    border: none;
+    background-color: white;
+    border-radius: 10vh;
+  
+}
+.contact-form > div > label{
+    font-family: Nexa-EL;
+    font-weight: bolder;
+    color: #142F43;
+    font-size: 1.2vw; 
+    
 
-
+    
+}
 
 
 .footer{
