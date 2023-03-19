@@ -1,0 +1,9 @@
+{
+    "project": [
+    {"title": "Sorting Algorythm Analysis", "image": "'Images/Project0.png'", "tags": "python jupyter-notebook"},
+    {"title": "WorldCup DataBase", "image": "'Images/Project1.png'", "tags": "html css php sql"},
+    {"title": "Interactable 2D Water", "image": "'Images/Project2.png'", "tags": "unity-engine c#"},
+    {"title": "Metroidvania Game", "image": "'default.png'", "tags": "java"},
+    {"title": "Toll System OS", "image": "'default.png'", "tags": "bash c"}
+    ]
+}

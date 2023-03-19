@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Salvador Palma</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="scrollAnimation.js"></script>
 </head>
     <body id="body">
         <div id="bg"></div>
@@ -11,12 +12,12 @@
         <script type="text/javascript" src="stars.js"></script>
         <div class="banner" >
             <div>
-                <p>Hi, my name is</p>
-                <p class="name">Salvador Palma</p>
+                <p class="hidden left">Hi, my name is</p>
+                <p class="name hidden left">Salvador Palma</p>
                 <p id="cnsl"></p>
             </div>
             <div>
-                <div class="character">   
+                <div class="character hidden right">   
                     <span class="character-container">
                         <div class = "character-holder">
                             <img class="model-body" src="Untitled-1.gif">
@@ -31,62 +32,11 @@
         <script src="characterMove.js"></script>
         
         <div class="content-container">
-            <!--<section class="contact-container">
-                <div class="contact-container-solid">
-                    <p class="subtitle">Contact me</p>
-                    <form class="contact-form">
-                        <div>
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div>
-                            <input type="email" placeholder="E-mail">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div>
-                            <textarea placeholder="Message">
-
-                            </textarea>
-
-                        </div>
-                    </form>
-                </div>
-                <div>
-                    <img src="">
-                </div>
-
-            </section>-->
             <section class="projects-container">
-                <p class="title">Finished Projects</p>
-                <div class="project-scroller" id="project-scroller">
-                    <div class="project-container" id="project">
-                        <div class="project-image"></div>
-                        <p class="project-title">Sorting Algorithm Analysis</p>
-                        <p class="project-tools">python jupyter-notebook</p>
-                    </div>
-                    <div class="project-container" id="project">
-                        <div class="project-image"></div>
-                        <p class="project-title">World Cup DataBase</p>
-                        <p class="project-tools">sql php html css</p>
-                    </div>
-                    <div class="project-container" id="project">
-                        <div class="project-image"></div>
-                        <p class="project-title">Interactable 2D Water</p>
-                        <p class="project-tools">unity c#</p>
-                    </div>
-                    <div class="project-container" id="project">
-                        <div class="project-image"></div>
-                        <p class="project-title">Metroidvania Game</p>
-                        <p class="project-tools">java</p>
-                    </div>
-                    <div class="project-container" id="project">
-                        <div class="project-image"></div>
-                        <p class="project-title">Toll System OS</p>
-                        <p class="project-tools">bash c</p>
-                    </div>
-                </div>
+                <p class="title hidden left">Finished Projects</p>
+                <ul class="project-scroller hidden right" id="project-scroller"></ul>
                 <script type="text/javascript" src="autoScroll.js"></script>
+                <script type="text/javascript" src="DataBase/ProjectList.js"></script>
             </section>
         </div>
 

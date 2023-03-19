@@ -6,6 +6,24 @@
     font-family: Nexa-H;
     src: url(Nexa-Heavy.ttf);
 }
+.hidden{
+    opacity: 0;
+    filter:blur(5px);
+    transition: all 1s, text-shadow 0.5s;
+}
+.left{
+    transform: translateX(-100%);
+    
+}
+.right{
+    transform: translateX(100%);
+
+}
+.show{
+    opacity: 1;
+    filter:blur(0px);
+    transform: translateX(0);
+}
 img{
     pointer-events: none;
     user-select: none;
@@ -48,11 +66,11 @@ body {
     font-family: Nexa-H;
     color: #32D874;
     font-size: 3vw;
-    transition: text-shadow 0.2s;
+    /*transition: text-shadow 0.3s;*/
 }
 .name:hover{
     text-shadow:
-    0 0 10px #32D874;
+    0 0 20px #32D874;
 }
 
 
@@ -144,14 +162,10 @@ body {
 
 .content-container > * {
     margin: 6vw;
+    overflow-x: hidden;
 }
 
-.contact-container{
-    display: none;
-    height: auto;
-    width: 90%;
-    display: flex;
-}
+
 
 .title{
     font-family: Nexa-H;
@@ -161,46 +175,13 @@ body {
 }
 
 
-/* C O N T A C T */
-.contact-container-solid{
-    width: 60%;
-    height: 100%;
-    border-radius: 5vw;
-    padding-bottom: 4vw;
-    background-color: rgba(255,255,255,0.8);
 
-}
-.subtitle{
-    font-family: Nexa-EL;
-    font-weight: bolder;
-    color: #142F43;
-    font-size: 1.5vw;
-    margin: 2vw;
-}
-.contact-form{
-    margin: 0 3vw 0 3vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact-form > div {
-    width:90%;
-}
-.contact-form > div > *{
-    margin: 0.3vw 0 0.3vw 0;
-    height: 3vw;
-    width: 100%;
-    border: none;
-    background-color: white;
-    border-radius: 50px;
-  
-}
 
 
 /* P R O J E C T */
 
 .projects-container{
+    padding-top: 10vw;
     height: auto;
     width: 90%; 
 }
@@ -221,7 +202,7 @@ body {
     aspect-ratio: 1/1;
     width:30vw;
     min-width: 20vw;
-    box-shadow: 0px 0px 10px 2px rgba(20,47,67,0.1);
+    box-shadow: 0px 0px 10px 2px rgba(63, 72, 78, 0.1);
     border-radius: 5%;
     overflow: hidden;
 
@@ -240,8 +221,8 @@ body {
     scale: 1.05;
 }
 .project-image{
+    background-size: cover;
     box-sizing: border-box;
-    background-color: #C144EB;
     height:60%;
     width:100%; 
 
@@ -283,4 +264,12 @@ body {
 .footer > p {
     color: white;
     text-decoration:underline;
+}
+
+
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
 }
